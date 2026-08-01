@@ -1,41 +1,60 @@
-# @gimpysticks Canonical Prompt System
+# gimpysticks Canonical Prompt System
 
-This ZIP contains the consolidated modular Markdown knowledge base for the @gimpysticks creative prompt workflow.
+Archive of the @gimpysticks creative prompt system. Each version of the system
+lives in its own subdirectory so older revisions stay intact and referenceable
+instead of being overwritten in place.
 
-## Files
+## Versions
 
-1. `01_Core_Instructions.md`
-2. `02_Style_Guide.md`
-3. `03_Output_Format.md`
-4. `04_Profile_Library.md`
-5. `05_Character_Library.md`
-6. `06_Permanent_Avoid_List.md`
-7. `07_Challenge_Overlay.md`
-8. `08_Archived_Legacy.md`
-9. `09_Change_Log.md`
-10. `10_Niche_Keyword_Strategy.md`
+### `V1/` — original modular system
+The first consolidated modular knowledge base: ten numbered Markdown control
+files (`01_`–`10_`) plus two later style modules.
 
-All files are Markdown. No YAML is required.
+- Reel-first posting default
+- Unstructured 5-hashtag approach
+- Last content update 2026-07-02 (Instagram narrative + niche keyword updates)
+- Adds `11_Chenier_Module.md` and `12_Style_Module_Gothic_Atmospheric_Symbolism.md`
 
-## 2026-07-02 Update
+Entry point: `V1/README.md`
 
-This package includes Instagram narrative optimization updates folded into the appropriate modular files.
+### `V2/` — v2.1 Carousel-First (5-Tag)
+Dated 2026-07-27. Full replacement for V1, with numeric filename prefixes
+dropped in favour of descriptive names.
 
-Updated files:
+- Default output is a 4-slide **Carousel**, not a Reel
+- Reels only when real motion exists
+- Exactly 5 hashtags with defined slot structure, `#gimpysticks` always last
+- Caption formula: hook + micro-lore + question + save CTA
+- Alt text section for Instagram SEO
+- Posting cadence capped at 1/day
 
-- `01_Core_Instructions.md`
-- `02_Style_Guide.md`
-- `03_Output_Format.md`
-- `06_Permanent_Avoid_List.md`
-- `09_Change_Log.md`
+Entry point: `V2/README.md` (see also `V2/README_INSTALL_v2.1_5TAG.md`)
 
+### `V2.2_Lessons/` — v2.2 Victorian Course Integration
+Builds on V2 with the Late Victorian London course material folded in.
 
-## 2026-07-02 Niche Keyword Update
+- Course period 1880–1901, organized by visual ecosystems
+- Victorian course profile `--p cz2fnyy 9rfajjh`; standard ending
+  `--stylize 125 --v 8 --p cz2fnyy 9rfajjh`
+- Hashtag slot 4 fixed to `#HistoricalReconstruction`
+- Adds `Victorian_London_Course_Context.md` and
+  `Style_Module_Gothic_Atmospheric_Symbolism.md`
 
-Added `10_Niche_Keyword_Strategy.md` as a separate modular control file for Instagram niche positioning, keyword tiers, hashtag strategy, alt text, Reel overlays, and series-title guidance.
+Entry point: `V2.2_Lessons/README.md`
 
-Updated files:
+### `V2.5/` — single-file consolidated control file
+A different packaging approach: the whole specification collapsed into one
+document, `Midjourney_Prompt_Control_File.md`, written as a general-purpose
+Midjourney Prompt Architect spec rather than a gimpysticks-specific one.
 
-- `README.md`
-- `09_Change_Log.md`
-- `10_Niche_Keyword_Strategy.md`
+- Ten numbered sections covering workflow, output format, style, keywords,
+  libraries, avoid list, challenge overlays, change log, and legacy notes
+- Standardized 5-tag variation matrix
+- Camera / film stock / lighting / palette reference tables
+
+## Notes
+
+- `V1/` retains the git history of the original repository root; the earlier
+  root-level files were moved into it rather than deleted.
+- Versions are additive snapshots. Nothing here is auto-migrated — pick the
+  directory for the revision you want to load.
