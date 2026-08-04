@@ -102,6 +102,9 @@ When generating multi-option prompt packages, use the following standardized pre
 - **Monochrome & Muted:** Desaturated slate grey, sepia tone, monochrome charcoal, warm muted earth tones.
 - **Vibrant & High Contrast:** Teal and orange film grade, neon neon-cyan and electric pink, deep crimson and obsidian, emerald green and gold.
 
+### 3.4 Decorative Frame & Border Styles
+- **Ornate Gothic Horror Border:** A carved, thorn-like biomorphic frame around the inside edge of the composition, formed from twisted Gothic tracery, skeletal curves, skull motifs, gnarled roots, pointed thorns, and weathered blackened wood or iron. The border should feel structurally integrated with the artwork, richly dimensional and tactile, while leaving the central scene clearly visible.
+
 ---
 
 ## 4. Niche Keyword Strategy
@@ -140,6 +143,9 @@ Use structured traits when constructing character specifications:
 - **Overgrown Solarpunk Ruins:** Ancient stone amphitheater covered in lush hanging moss and bioluminescent vines, glass-and-steel solar towers integrated into nature, morning sunlight with light fog.
 - **Subterranean Crystal Cave:** Massive underground cavern filled with towering translucent amethyst crystals emitting soft purple ambient light, dark reflecting water pool, faint silhouette of an explorer.
 
+### 6.2 Midjourney Profile Presets
+- **Chenier:** `--profile i2j7d5o`
+
 ---
 
 ## 7. Permanent Avoid List (Negative Parameters)
@@ -172,7 +178,13 @@ When generating prompts for specific creative constraints or thematic challenges
 
 ## 9. Change Log & Versioning
 
-- **v2.1 (Current Version):**
+- **v2.4 (Current Version):**
+  - Replaced the long Chenier profile parameter with the shortened preset (`--profile i2j7d5o`).
+- **v2.3:**
+  - Added the initial Chenier Midjourney profile preset to the Profile & Environment Library.
+- **v2.2:**
+  - Added reusable ornate Gothic horror border terminology to the Style Guide.
+- **v2.1:**
   - Consolidated all discrete specification files into a unified single control file.
   - Standardized 5-tag matrix system for prompt variations.
   - Expanded camera focal length and film stock reference tables.
