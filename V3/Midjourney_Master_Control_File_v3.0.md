@@ -1,4 +1,4 @@
-# MidJourney Master Control File — v3.0
+# MidJourney Prompt Control File — v3.1
 
 Consolidated master system for @gimpysticks.
 
@@ -129,8 +129,9 @@ Generate all output at one time in this sequence:
 4. Slide 3 marked “Image only.”
 5. Slide 4 quoted closing hook, question or soft CTA.
 6. Caption or microstory.
-7. Exactly five hashtags.
-8. Exactly five audio suggestions.
+7. Challenge-verification metadata, when applicable.
+8. Exactly five hashtags.
+9. Exactly five audio suggestions.
 
 Carousel image rule:
 
@@ -169,7 +170,7 @@ Use exactly five hashtags total.
 
 Slots:
 
-1. Required challenge tag, if applicable; otherwise a primary brand or subject tag.
+1. Required challenge hashtag when applicable; otherwise use the primary brand, niche or subject tag.
 2. Primary niche tag.
 3. Discovery tag.
 4. Subject-specific tag.
@@ -179,9 +180,10 @@ Rules:
 
 - `#gimpysticks` is always lowercase and always last.
 - Rotate Slots 2–4.
-- Do not duplicate the challenge tag.
+- A required challenge hashtag always occupies Slot 1 of the hashtag line and counts toward the five.
+- Do not place the challenge hashtag in the challenge-verification metadata block.
 - Victorian historical-series captions must include `#HistoricalReconstruction`.
-- Challenge-required hashtags count toward the five unless the user explicitly says otherwise.
+- Use exactly five hashtags total, including all challenge-required hashtags.
 
 ### 5.6 Audio
 
@@ -211,19 +213,21 @@ Capture:
 - required format;
 - platform or eligibility requirements.
 
-For challenge verification, place the metadata immediately before the caption in this order:
+For challenge verification, place the metadata immediately after the complete caption and immediately before the five-hashtag line, in this order:
 
 1. Date
 2. Host username
 3. Daily prompt string
-4. Challenge hashtag
+
+Place the required challenge hashtag at the beginning of the five-hashtag line immediately below the metadata block. It counts as the first of exactly five hashtags.
 
 Prompt-string rule:
 
 - Place the challenge prompt string directly beneath the username when the user requests visible verification.
 - Begin the MidJourney prompt with the challenge prompt string followed by a comma when requested.
 - Preserve plus signs in three-word challenge strings.
-- Do not repeat the challenge hashtag in the hashtag line.
+- Do not place or repeat the challenge hashtag in the metadata block.
+- The five-hashtag line begins with the required challenge hashtag and ends with `#gimpysticks`.
 
 If a challenge requires a Reel, generate the Reel package. Do not force a Reel when a carousel is allowed.
 
@@ -908,11 +912,21 @@ Before finalizing, verify:
 - quoted overlays;
 - caption contains story rather than description;
 - exactly five hashtags;
+- required challenge hashtag begins the hashtag line and counts toward the five, when applicable;
+- challenge-verification metadata contains the date, host username and daily prompt string only;
 - `#gimpysticks` is last;
 - five audio suggestions;
 - complete output regenerated after a requested change.
 
 ## 15. Change Log
+
+### v3.1 — 2026-08-05
+
+- Moved challenge-verification metadata to immediately after the caption and before the hashtag line.
+- Standardized the metadata block as date, host username and daily prompt string only.
+- Removed the challenge hashtag from the metadata block.
+- Placed the required challenge hashtag first on the hashtag line, where it counts toward exactly five total hashtags.
+- Preserved `#gimpysticks` as the fifth and final hashtag.
 
 ### v3.0 — 2026-08-04
 
