@@ -52,9 +52,33 @@ Midjourney Prompt Architect spec rather than a gimpysticks-specific one.
 - Standardized 5-tag variation matrix
 - Camera / film stock / lighting / palette reference tables
 
+Entry point: `V2.5/Midjourney_Prompt_Control_File.md`
+
+### `V3/` — Master Control File v3.0 / v3.1
+Consolidated master prompt system specification for @gimpysticks.
+
+- Current MidJourney defaults: `--v 8 --s 50`, `--p 4lbi7ao lzdppsy`
+- Restored full slash-command system (`/mj`, `/carousel`, `/carossel`, `/reel`, `/challenge`, etc.)
+- Carousel overlays restricted to quoted text on Slides 1 & 4
+- Standardized 5-tag hashtag structure ending with `#gimpysticks`
+- Standardized challenge-verification metadata block
+
+Entry point: `V3/Midjourney_Master_Control_File_v3.0.md`
+
+### `V3.2/` — Master Control File v3.2 (Monthly Challenge Combination System)
+Builds on V3 with multi-challenge combination workflow for monthly prompt challenge sets.
+
+- Adds `/combine` command family (`/combine [date]`, `/combine carousel`, `/combine all`)
+- Daily comparison, ranking, and user-selection behavior
+- Limits combined sets to max 4 challenges to enforce the 5-tag rule
+- Numbered, fully separated output sets to prevent mixing output components
+
+Entry point: `V3.2/Midjourney_Prompt_Control_File.md`
+
 ## Notes
 
 - `V1/` retains the git history of the original repository root; the earlier
   root-level files were moved into it rather than deleted.
 - Versions are additive snapshots. Nothing here is auto-migrated — pick the
   directory for the revision you want to load.
+
